@@ -15,23 +15,23 @@ We know this time of the year is crazy for college students and that
 your time is very valuable. Please try not to spend more than about 1
 total hour collectively on this.
 
-------------------------------------------------------------------------
+---
 
 ## Contents
 
--   Introduction
--   Code Review (10 minutes)
-    -   Task
-    -   PHP
-    -   Python
-    -   Code comments
-    -   Follow-up Questions
--   Coding Challenge (\~50 minutes)
-    -   Exercise
-    -   Follow-up questions
--   Delivery
+- Introduction
+- Code Review (10 minutes)
+  - Task
+  - PHP
+  - Python
+  - Code comments
+  - Follow-up Questions
+- Coding Challenge (\~50 minutes)
+  - Exercise
+  - Follow-up questions
+- Delivery
 
-------------------------------------------------------------------------
+---
 
 # Code Review (10 minutes)
 
@@ -48,8 +48,8 @@ Your colleague or team member was given the following task:
 
 2.  Input data will look like:
 
-    ``` json
-    {"email":"a@b.com","role":"admin","metadata":{"source":"vendor"}}
+    ```json
+    { "email": "a@b.com", "role": "admin", "metadata": { "source": "vendor" } }
     ```
 
 3.  Verify signature header `X-Signature`.
@@ -65,11 +65,11 @@ on any issues you find.
 review whichever one you want. It is not intended for you to review
 both.
 
-------------------------------------------------------------------------
+---
 
 ## PHP
 
-``` php
+```php
 <?php
 // webhook.php
 require_once "db.php"; // provides $pdo (PDO instance)
@@ -119,11 +119,11 @@ $pdo->exec("INSERT INTO users(email, role) VALUES('$email', '$role')");
 echo "ok";
 ```
 
-------------------------------------------------------------------------
+---
 
 ## Python
 
-``` python
+```python
 # app.py
 import os
 import json
@@ -181,7 +181,7 @@ if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
 ```
 
-------------------------------------------------------------------------
+---
 
 ## Code comments
 
@@ -189,18 +189,18 @@ Put your code comments here. For comments on specific lines, please
 include the line number. Feel free to comment on the general task as
 well.
 
-------------------------------------------------------------------------
+---
 
 ## Follow-up Questions
 
 1.  Share your prompts and the AI outputs.
 2.  For each prompt:
-    -   Tell us what you were hoping for the AI to accomplish.
-    -   Tell us what it actually did.
-    -   Did you have to re-prompt it based on its output?
-    -   If you had to change your approach, why?
+    - Tell us what you were hoping for the AI to accomplish.
+    - Tell us what it actually did.
+    - Did you have to re-prompt it based on its output?
+    - If you had to change your approach, why?
 
-------------------------------------------------------------------------
+---
 
 # Coding Challenge (\~50 minutes)
 
@@ -217,7 +217,7 @@ and any backend logic needed to perform the calculations.
 You can use any language of your choosing for both the frontend and
 backend code.
 
-------------------------------------------------------------------------
+---
 
 ## Follow-up questions
 
@@ -227,12 +227,12 @@ backend code.
     would you include?
 4.  If you used AI, please include all of your prompts and answer the
     following questions:
-    -   What did the AI do well?
-    -   What did the AI do poorly?
-    -   For the places it did poorly, how did you change your approach
-        to your prompts to improve its output?
+    - What did the AI do well?
+    - What did the AI do poorly?
+    - For the places it did poorly, how did you change your approach
+      to your prompts to improve its output?
 
-------------------------------------------------------------------------
+---
 
 # Delivery
 
@@ -242,5 +242,5 @@ Please reply to the email you received with:
 2.  Any questions or thoughts you had on the exercise.
 3.  A link to a public GitHub repository including your answer to the
     coding challenge.
-    -   If we can't get to the repository, we won't be able to consider
-        your answer to the coding challenge.
+    - If we can't get to the repository, we won't be able to consider
+      your answer to the coding challenge.
