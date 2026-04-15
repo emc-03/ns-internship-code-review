@@ -12,7 +12,7 @@ _OPERATORS: dict[str, callable] ={
 }
  # Calculate a function that takes two numbers and an operator, checks if the op. is supported and completes the calculation. Otherwise, it will raise an error. 
 
-def calculate(left: float, operator: str, right: float) -> float:
+def calculate(left: float, right: float, operator: str) -> float:
     fn = _OPERATORS.get(operator)
     if fn is None:
         raise ValueError("Unsupported operator.")

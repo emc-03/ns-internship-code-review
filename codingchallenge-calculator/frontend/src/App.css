@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
+.calculator {
+  display: inline-block;
+  text-align: left;
+  border: 1px solid #73a6f1;
+  padding: 20px;
+  border-radius: 8px;
+}
+.calculator input, .calculator select {
+  margin: 10px 0;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.calculator button {
+  padding: 10px 20px;
+  background-color: #73a6f1;
+  color: white;
+  border: 1px solid #73a6f1;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.calculator button:hover {
+  background-color: #2f4b72;
+  border-color: #5a8bd4;
+}
+.result {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #333;
+}   
